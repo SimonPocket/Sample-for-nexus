@@ -1,15 +1,23 @@
 # SDK per Android per Autenticazione SPID
-Con l'SDK per Android si consente agli sviluppatori di integrare con poco sforzo l'autenticazione alla propria app con il protocollo SPID.
-Per approfondire ulteriormente l'argomento rimandiamo a http://spid-regole-tecniche.readthedocs.io/en/latest/
+Con l'SDK Spid per Android si consente agli sviluppatori di integrare con poco sforzo l'autenticazione alla propria app con il protocollo SPID.
+Per approfondimenti tecnici sull'argomento rimandiamo a http://spid-regole-tecniche.readthedocs.io/en/latest/
+
 I passaggi riportati di seguito ... librerire SAML , OpenSAML etc... qual è stata usata?
 
-Infine verrà descritto il caso di test sugli ambienti creati ad hoc
 
-## Iniziamo
-Premettiamo che sono stati messi a disposizione due domini certificati per idp e sp
+
+## Premessa
+Premettiamo che sono stati messi a disposizione due domini per idp e sp.
+Nel caso non si avessero a disposizione delle credenziali per l'autenticazione 
+
+
+
+## 4. Modifica del file manifest
 
 ## 8. Aggiunta del pulsante Accedi di Facebook
-Il modo più semplice per aggiungere Facebook Login alla tua app è usare LoginButton dell'SDK. LoginButton è un elemento dell'interfaccia utente che racchiude le funzionalità disponibili in LoginManager. Cliccando sul pulsante, l'utente avvia l'accesso con le autorizzazioni impostate in LoginManager. Il pulsante segue lo stato d'accesso, mostrando il testo corretto secondo lo stato di autenticazione.
+Il modo più semplice per aggiungere SPID Login alla tua app Android è usare LoginButton dell'SDK. 
+
+LoginButton è un elemento dell'interfaccia utente che racchiude le funzionalità disponibili in LoginManager. Cliccando sul pulsante, l'utente avvia l'accesso con le autorizzazioni impostate in LoginManager. Il pulsante segue lo stato d'accesso, mostrando il testo corretto secondo lo stato di autenticazione.
 Per aggiungere il pulsante Accedi di Facebook, aggiungilo innanzitutto al file XML del layout con il nome della classe completo, com.facebook.widget.LoginButton:
 ```
 Code Snippets
@@ -26,6 +34,11 @@ Se usi LoginButton in un frammento, imposta il frammento nel pulsante come mostr
 Code Snippets
 ```
 Infine, chiama callbackManager.onActivityResult per passare i risultati di accesso a LoginManager tramite callbackManager.
+
+## 9. Registrazione di una callback
+
+## 10. Verifica dello stato d'accesso
+
 
 
 
