@@ -8,8 +8,13 @@ I passaggi riportati di seguito ... librerire SAML , OpenSAML etc... qual è sta
 
 ## Premessa
 Premettiamo che sono stati messi a disposizione due domini per idp e sp.
+
+url
+url
+
 Nel caso non si avessero a disposizione delle credenziali per l'autenticazione 
 
+Ambiente test poste, 
 
 
 ## 4. Modifica del file manifest
